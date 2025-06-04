@@ -153,3 +153,8 @@ EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messag
 import os
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+
+SECRET_KEY = os.environ.get('SECRET_KEY', '^95vs=qh)@txf(ta%@l-c$14aiscuspjw9p=!^$a3$+scjdq@')
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+
+
