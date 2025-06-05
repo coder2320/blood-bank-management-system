@@ -149,6 +149,8 @@ EMAIL_HOST_PASSWORD = 'xyz' # host email password required
 # this process is required because google blocks apps authentication by default
 EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messages sent from website
 
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 import os
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -157,4 +159,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = os.environ.get('SECRET_KEY', '^95vs=qh)@txf(ta%@l-c$14aiscuspjw9p=!^$a3$+scjdq@')
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

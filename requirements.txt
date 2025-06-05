@@ -6,4 +6,7 @@ whitenoise
 python-dotenv
 Pillow
 django-widget-tweaks
+gunicorn
+widget-tweaks
+
 
