@@ -47,3 +47,10 @@ urlpatterns = [
     path('update-reject-status/<int:pk>', views.update_reject_status_view,name='update-reject-status'),
    
 ]
+from django.http import HttpResponse
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', lambda request: HttpResponse("🏥 Blood Bank Management System is running!")),
+]
+
